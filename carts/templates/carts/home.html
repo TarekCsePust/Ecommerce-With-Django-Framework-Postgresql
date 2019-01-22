@@ -2,7 +2,11 @@
 
 
 {% block content %}
-<h1>Cart</h1>
+<div class='text-center'>
+         {% include 'others_page/snippets/banner.html' %}
+          <h1>Cart</h1>
+
+      </div>
 
 {% if cart.products.exists %}
 <table class="table cart-table">

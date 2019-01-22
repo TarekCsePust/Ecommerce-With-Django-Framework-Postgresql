@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'tags',
     'carts',
     'accounts',
+    'banner',
+    'crispy_forms',
 
 
 ]
@@ -159,8 +161,8 @@ DEFAULT_ACTIVATION_DAYS = 7
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER='Enter email'
-EMAIL_HOST_PASSWORD ='Enter email password'
+EMAIL_HOST_USER='Your mail'
+EMAIL_HOST_PASSWORD ='mail password'
 EMAIL_PORT = 587
 
 BASE_URL = '127.0.0.1:8000'

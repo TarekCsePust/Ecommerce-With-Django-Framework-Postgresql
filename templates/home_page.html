@@ -6,29 +6,27 @@ Home page
 {% endblock %}
 
 {% block base_head %}
- <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}?version=1" >
 {% endblock %}
 
 {% block content %}
-<div class="text-center">
-              <h1>Hello, world! {{title}}</h1>
-          </div>
-          <img src="{% static 'img/img1.png'%}" class="img-circle">
-          <div class="container">
-              <div class="row">
-                  <div class="col">
-                      <p>{{content}}</p>
-                  </div>
-              </div>
-              {% if request.user.is_authenticated %}
-              <div class="row">
-                  <div class="col">
-                      <h1>premium content</h1>
-                      <p>{{premium_content}}</p>
-                  </div>
-              </div>
-              {% endif %}
-          </div>
+
+
+ {% include 'home_page/snippets/banner.html' %}
+<br>
+
+  <div class="jumbotron">
+    <h1>EasyBazar online shop</h1>
+    <p>easybazar.com.bd is the best online shopping site featuring millions of products including clothes, electronics and household products. Experience fast, reliable and trusted online shopping in bangladesh with home delivery anywhere across country. </p>
+  </div>
+  <p>Easybazar being the best online shop in bd offers payment on delivery
+    for branded products with buyer’s protection. Look no further for
+    elite line of women’s clothing in both western and traditional styles.
+    And why visit crowded malls when you can handpick your desired product
+    from largest online bazar in bangladesh. Now with Easybazar mobile phone app,
+    you can experience convenient online shopping in bangladesh with payment on delivery.
+     So make the most of online shopping in dhaka, chittagong, rajshahi,
+    khulna, rangpur, barisal and across all cities in country</p>
+
 
 {% endblock %}
 
